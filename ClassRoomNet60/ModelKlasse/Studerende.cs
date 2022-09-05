@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassRoomNet60
+namespace ClassRoomNet60.ModelKlasse
 {
     public class Studerende
     {
@@ -29,20 +29,20 @@ namespace ClassRoomNet60
         public int Fødselsmåned
         {
             get { return _fødselsmåned; }
-            set { _fødselsmåned= value; }
+            set { _fødselsmåned = value; }
         }
 
         public int fødselsdag
         {
             get { return _fødselsdag; }
-            set { _fødselsdag= value; }
+            set { _fødselsdag = value; }
         }
 
 
         public override string ToString()
         {
-            return $"{nameof(_navn)}: {_navn}, {nameof(_fødselsmåned)}: {_fødselsmåned}, {nameof(_fødselsdag)}: {_fødselsdag}"; 
+            return $"{nameof(_navn)}: {_navn}, {nameof(_fødselsmåned)}: {_fødselsmåned}, {nameof(_fødselsdag)}: {_fødselsdag}";
+        }
+
+
     }
-
-
-}
